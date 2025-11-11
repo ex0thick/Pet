@@ -96,7 +96,7 @@
 <body>
     <div id="app">
         <div id="container">
-            <div class="counter">Head Pets: {{ headPetCount }} | Peach Touches: {{ peachCount }}</div>
+            <div class="counter"> {{ headPetCount }} </div>
             <img v-if="mode === 'headPet'" id="mainImage" :src="currentImage" alt="Girl Image" :style="{ transform: transformStyle }">
             <span v-else id="peachEmoji" :style="{ transform: transformStyle, filter: peachFilter }">ðŸ‘</span>
             <div class="controls">
